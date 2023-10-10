@@ -1,3 +1,4 @@
+import java.lang.Exception
 import java.util.Scanner
 
 fun main(args: Array<String>) {
@@ -13,7 +14,9 @@ fun main(args: Array<String>) {
 //    println("Write repeat times : ")
 //    val numberOfRepeat = scanner.nextInt()
 //    printAndRepeat(word,numberOfRepeat)
-    print(convertData(100))
+//    print(convertData(100))
+    println("Shkruaj numrin : ")
+    print(isOdd(readln().toInt()))
 }
 
 fun printoTeDhenat(emri : String, mbiemri : String , dataELindjes : String) {
@@ -73,8 +76,19 @@ fun convertData(firstType : Byte) : String {
     return fourthType.toString()
 }
 
+fun calculator(operator : String , a : Int , b : Int) : Int {
+    if (operator == "+") return a + b
+    else if (operator == "-") return a - b
+    else if (operator == "*") return a * b
+    else if (operator == "/") return a / b
+    else return 0
+}
 
-
+fun isOdd(number : Int) : Boolean {
+//    if (number % 2 == 0) return true
+//    else return false
+    return number % 2 != 0
+}
 
 
 
