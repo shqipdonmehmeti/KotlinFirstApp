@@ -29,6 +29,8 @@ fun main(args: Array<String>) {
 //    sumThreeNumbersShortWay(1,2,3) // default arguments
 //    sumThreeNumbersShortWay(a = 3,c = 5 , b = 4) // named arguments
 //    stringToNumber2()
+//    testImmutability()
+    testImmutablitity()
 
 }
 
@@ -179,6 +181,61 @@ fun printOddOrEven(isOdd : Boolean) {
         for (i in 0..100 step 2) println(i)
     }
 }
+
+
+fun testImmutablitity() {
+//    var a = "Test"
+//    var b = a
+//    b = "Test 2"
+//    println("a : $a , b : $b")
+
+//    var c = mutableListOf(1,2,3)
+//    var d = c
+//    d.add(4)
+//    println("c : $c , d : $d")
+
+    var a : Int = 5
+    var b : Int = a
+    b = 10
+    println("a : $a , b : $b")
+
+}
+
+
+
+
+
+
+
+
+
+
+fun testImmutability() {
+    var a : String = "Hello"
+    var b : String = a
+    b = "Hello world"
+
+    println("a : $a , b : $b")
+
+    var c  = mutableListOf(1,2,3) //0x345
+//    var d = c // 0x345
+//    d.add(4) // 0x345
+
+    var d = c // 0x345
+    d = mutableListOf(1,2,3,4) // 0x346
+
+    println("c : $c , d : $d")
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
