@@ -1,4 +1,8 @@
+import kotlinClasses.Node
+import kotlinClasses.Node2
 import java.lang.Exception
+import java.lang.IllegalArgumentException
+import java.lang.NullPointerException
 import java.util.Scanner
 
 fun main(args: Array<String>) {
@@ -30,7 +34,16 @@ fun main(args: Array<String>) {
 //    sumThreeNumbersShortWay(a = 3,c = 5 , b = 4) // named arguments
 //    stringToNumber2()
 //    testImmutability()
-    testImmutablitity()
+//    testImmutablitity()
+//        testNull()
+    testNullability()
+
+
+
+
+
+
+
 
 }
 
@@ -227,6 +240,49 @@ fun testImmutability() {
     println("c : $c , d : $d")
 }
 
+fun testNull() {
+    var a : String? = null
+    var b = "test"
+    println(b.length ?: "")
+//    a = "Test"
+//    if (a != null) {
+//        println(a.length)
+//    }
+//    println(a!!.length)
+}
+
+
+fun foo(node : Node) : String? {
+    val parent = node.getParent() ?: return null
+    return parent
+}
+
+
+
+fun testNullability() {
+    var a : String? = null
+
+        // if condition to check if not null
+//    if (a != null) {
+//        println(a.length)
+//    }
+
+    // safe operator
+//    println(a?.length)
+
+    // elvis operator
+//    println(a?.length ?: -1)
+
+    // !! operator
+
+    println(a!!.length)
+}
+
+fun foo2(node2 : Node2?) : String? {
+    val parent = node2?.getParent() ?: return "test"
+    val name = node2.getName() ?: throw IllegalArgumentException("Bad Argument")
+    return "najsen"
+}
 
 
 
