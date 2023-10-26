@@ -1,4 +1,4 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
 class City(val name : String) {
     var population : Int = 0

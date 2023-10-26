@@ -1,8 +1,6 @@
-import kotlinClasses.Node
-import kotlinClasses.Node2
-import java.lang.Exception
+import kotlinClasses.exercises.Node
+import kotlinClasses.exercises.Node2
 import java.lang.IllegalArgumentException
-import java.lang.NullPointerException
 import java.util.Scanner
 
 fun main(args: Array<String>) {

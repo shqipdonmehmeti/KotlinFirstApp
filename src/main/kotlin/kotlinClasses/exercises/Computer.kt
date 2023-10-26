@@ -1,4 +1,4 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
 class Computer {
     var screen : String = ""

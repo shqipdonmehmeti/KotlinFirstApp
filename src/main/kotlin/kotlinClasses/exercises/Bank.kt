@@ -1,4 +1,4 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
 class Bank(var accountNumber : Long , var isActive : Boolean , var money : Short ) {
 

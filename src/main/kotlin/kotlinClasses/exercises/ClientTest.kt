@@ -1,4 +1,4 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
 fun main() {
     val client = Client()

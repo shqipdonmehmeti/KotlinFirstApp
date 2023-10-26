@@ -1,4 +1,4 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
 fun main() {
     val bank1 = Bank(152333,true,50)

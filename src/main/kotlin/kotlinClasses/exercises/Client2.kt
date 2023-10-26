@@ -1,6 +1,6 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
-class Client {
+class Client2 {
     var name : String = "Unknown"
     var age : Int = 18
         set(value) {
@@ -8,7 +8,6 @@ class Client {
              else value
 
         }
-    //    var info : String = "$name + $age"
-    var info : String = ""
-        get() = "$name + $age"
+    val info : String
+        get() = "name : $name , age : $age"
 }

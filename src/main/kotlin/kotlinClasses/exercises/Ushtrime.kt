@@ -1,4 +1,4 @@
-package kotlinClasses
+package kotlinClasses.exercises
 
 import kotlin.math.sqrt
 
